@@ -1,0 +1,117 @@
+:root {
+    --yellowColor: #e1f296;
+    --lightGreenColor: #5aba8a;
+    --darkGreenColor: #01565b;
+    --textColor: #044561;
+    --h1Color: #012e33;
+    --cardColor: #4c9fa7;
+    --whiteColor: hsl(0, 0%, 100%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(224, 29%, 80%);
+
+    /*Font and Typography*/
+    --h1FontSize: 2.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+}
+
+.Account {
+    padding: 2rem 2.5rem;
+    width: 25%;
+    background: rgb(2, 0, 36);
+    position: relative;
+    background: linear-gradient(
+        228deg,
+        rgba(90, 186, 138, 1) 0%,
+        rgba(90, 186, 138, 1) 29%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    height: 100%;
+    .icons {
+        justify-content: space-between;
+        color: var(--whiteColor);
+        span {
+            background: rgba(255, 255, 255, 0.151);
+            padding: 0.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    .accountDetails {
+        // background: yellowgreen;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        .userInfo {
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            gap: 1rem;
+            .userAvatar {
+                padding: 0.5rem;
+                border-radius: 50%;
+                border: 3px solid var(--whiteColor);
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon {
+                    color: var(--whiteColor);
+                }
+            }
+            .name {
+                font-size: var(--h2FontSize);
+                font-weight: 700;
+                color: var(--darkGreenColor);
+            }
+            .position {
+                font-weight: 500;
+                font-size: var(--normalFontSize);
+            }
+            .btn {
+                box-shadow: none;
+                .icon {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .workingHours {
+            display: flex;
+            background: var(--darkGreenColor);
+            margin-top: 20px;
+            padding: 1rem;
+            gap: 1rem;
+            border-radius: 10px;
+            .workStart,
+            .workEnd {
+                background: var(--whiteColor);
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                border-radius: 10px;
+
+                &:nth-child(1) {
+                    font-size: var(--normalFontSize);
+                }
+            }
+
+            .workEnd {
+                background: transparent;
+                color: var(--whiteColor);
+            }
+        }
+    }
+}

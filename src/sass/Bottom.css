@@ -15,4 +15,75 @@
   --normalFontSize: 0.938rem;
   --smallFontSize: 0.813rem;
   --smallestFontSize: 0.75rem;
+}
+
+.Bottom {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.Bottom .graphDiv,
+.Bottom .scheduleDiv {
+  flex-basis: 50%;
+}
+.Bottom .graphDiv .title,
+.Bottom .scheduleDiv .title {
+  font-weight: 700;
+  color: var(--textColor);
+  display: block;
+  padding-bottom: 1rem;
+}
+.Bottom .scheduleDiv {
+  width: 100%;
+}
+.Bottom .scheduleDiv .singleTask {
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  background: rgb(247, 247, 247);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.Bottom .scheduleDiv .singleTask .imgDiv {
+  height: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  background: red;
+  border: 1px solid rgb(217, 215, 215);
+  margin-left: 1rem;
+  overflow: hidden;
+}
+.Bottom .scheduleDiv .singleTask .imgDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Bottom .scheduleDiv .singleTask .taskInfo {
+  display: flex;
+  flex-direction: column;
+}
+.Bottom .scheduleDiv .singleTask .taskInfo .task {
+  font-size: var(--h3FontSize);
+  font-weight: 700;
+  color: var(--darkGreenColor);
+}
+.Bottom .scheduleDiv .singleTask .taskInfo .status {
+  font-size: var(--smallFontSize);
+  color: var(--darkGreenColor);
+  font-weight: 500;
+  opacity: 0.9;
+}
+.Bottom .scheduleDiv .btn {
+  width: 100%;
+  background: var(--darkGreenColor);
+  color: var(--whiteColor);
+  justify-content: center;
+}
+.Bottom .scheduleDiv .btn .icon {
+  transition: 0.3 ease;
+}
+.Bottom .scheduleDiv .btn:hover .icon {
+  transform: translateX(5px);
 }/*# sourceMappingURL=Bottom.css.map */
